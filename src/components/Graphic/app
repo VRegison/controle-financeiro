@@ -1,0 +1,65 @@
+import ApexCharts from 'apexcharts';
+import ReactApexChart from 'react-apexcharts';
+import React, { useState } from 'react';
+
+export function Graphic(props) {
+
+   //pie
+   // series: [
+   //    2000, 700,
+   // ],
+   const [chartData, setChartData] = useState({
+
+
+      series: [
+         {
+           name: 'Opção 1',
+           data: [44, 55, 41, 17, 15],
+         },
+       ],
+      options: {
+         chart: {
+            type: 'bar',
+         },
+         // labels: ['Receita', 'Despesa'],
+         xaxis: {
+            categories: ['Categoria A', 'Categoria B', 'Categoria C', 'Categoria D', 'Categoria E'],
+          },
+         colors: ['#198754', '#dc3545'], // Altere as cores aqui
+
+      },
+   })
+
+
+
+
+   const handleOptionChange = () => {
+      const newSeries = [
+        {
+          name: 'Opção 2',
+          data: [30, 10, 60, 25, 40],
+        },
+      ];
+  
+      setChartData({
+        ...chartData,
+        series: newSeries,
+      });
+    };
+  
+
+
+
+
+   return (
+      <>
+      <ReactApexChart
+         options={chartData.options}
+         series={chartData.series}
+         type="bar"
+         height={350}
+         />      <button onClick={handleOptionChange}>Alterar Opção</button>
+
+         </>
+   )
+}

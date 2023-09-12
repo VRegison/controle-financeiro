@@ -1,0 +1,41 @@
+/* Estilos para a tabela */
+
+.table-main {
+  width: 65%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-right: 1%;
+  height: 48vh;
+  overflow: scroll;
+}
+
+.table-main th,
+.table-main td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-main th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para as setas */
+.icon-up {
+  color: #198754;
+}
+
+.icon-down {
+  color: #dc3545;
+}
+
+/* Estilos para o ícone de lixeira */
+.icon-trash {
+  color: #333;
+  cursor: pointer;
+}
+
+/* Estilos para a célula da lixeira */
+.table_td.td-trash {
+  text-align: center;
+}

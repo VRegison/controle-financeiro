@@ -1,0 +1,53 @@
+
+.box-card{
+   width: 23%;
+   border-radius: 8px;
+   height: 12vh;
+   background-color: #dfe6e9;
+   /* background-color: #f2f2f2; */
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-main{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 4% ;
+   margin:  5% auto;
+}
+
+
+.card-main div {
+   width:  40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+}
+
+
+
+.card-value{
+   display: flex;
+   align-items: start;
+   justify-content: start;
+
+   margin-top: 5px;
+   padding: 0px 4% ;
+   height: 25%;
+   position: relative;
+   top: -25%;
+
+}
+
+
+h5{
+   margin: 0px;
+}
+
+h4{
+   font-size: 20px;
+}
+
